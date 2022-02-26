@@ -24,7 +24,7 @@ public class Main {
                     + " " + book.getAuthor().getFirstName() + " "
                     + book.getAuthor().getLastName() + " на " + book.getYear());
         } else {
-            throw new RuntimeException("Невозможно изменить год книге, которой нет!");
+            throw new IllegalArgumentException("Невозможно изменить год книге, которой нет!");
         }
     }
 
